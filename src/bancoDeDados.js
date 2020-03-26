@@ -20,8 +20,7 @@ function getProduto(id){
 }
 
 function getProdutos(){
-    return Object.values(produtos)
+    return produtos//Object.values(produtos)
 }
 
 module.exports = {salvarProduto, getProduto, getProdutos }
-//eae

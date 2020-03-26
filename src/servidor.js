@@ -7,7 +7,7 @@ var options = {
 const porta = 3003
 const express = require("express")
 app = express()
-const banco = require("./bancoDeDados").default
+const banco = require("./bancoDeDados")
 const parser = require("body-parser")
 
 
