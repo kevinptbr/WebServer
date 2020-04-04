@@ -4,7 +4,7 @@ var options = {
     type: 'application/octet-stream'
   }
 
-const porta = 3003
+const porta =  process.env.PORT || 8080
 const express = require("express")
 app = express()
 const banco = require("./bancoDeDados")
