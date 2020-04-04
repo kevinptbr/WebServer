@@ -22,6 +22,10 @@ app.get('/produto/:id', (req, res, next) => {
     res.send(banco.getProduto(req.params.id))
 })
 
+app.get('/teste', (req, res, next) => {
+    res.send({"coe": "jn"})
+})
+
 app.post('/produtos', (req, res, next) => {
     const produto = banco.salvarProduto({
         nome: req.body.nome,
